@@ -6,8 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity ALU is
 
 	port (A, B: in std_logic_vector(3 downto 0);
-			C, D: in std_logic;
-			salida: out std_logic;
+			C, D: in std_ulogic;
 			buss: in std_logic_vector(3 downto 0);
 			led: out std_logic := '0';
 			resultado: out std_logic_vector(7 downto 0);
@@ -16,6 +15,8 @@ entity ALU is
 end ALU;
 
 architecture behavioral of ALU is
+
+	signal logicGate: std_logic;
 	
 begin
 
@@ -45,19 +46,26 @@ begin
 					resultado <= "000" & (('0' & A) - 1);
 				end if;
 			when "0110" =>
-				salida <= A and B;
+				logicGate <= C and D;
+				resultado <= "0000000" & logicGate;
 			when "0111" =>
-				salida <= A or B;
+				logicGate <= C or D;
+				resultado <= "0000000" & logicGate;
 			when "1000" =>
-				salida <= A nor B;
+				logicGate <= C nor D;
+				resultado <= "0000000" & logicGate;
 			when "1001" =>
-				salida <= A nand B;
+				logicGate <= C nand D;
+				resultado <= "0000000" & logicGate;
 			when "1010" =>
-				salida <= A xor B;
+				logicGate <= C xor D;
+				resultado <= "0000000" & logicGate;
 			when "1011" =>
-				salida <= A xnor B;
+				logicGate <= C xnor D;
+				resultado <= "0000000" & logicGate;
 			when "1100" =>
-				salida <= not A;
+				logicGate <= not C;
+				resultado <= "0000000" & logicGate;
 			when others =>
 		end case;
 	end process;

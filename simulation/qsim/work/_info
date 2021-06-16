@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dE:\Software Development\VHDL\Diseño Digital Con VHDL\Unidad IV\Examen\simulation\qsim
 vALU
-Z1 !s100 PSoA0[fB4hM1_o`J@ZGH^3
-Z2 Idk28igD^5hk8>lVH^l<Ro3
-Z3 V8Y^EY_aQ9ki6;o]oF<cC03
+Z1 !s100 Y3KAPL7TY94:kiV<6jSOn3
+Z2 I0j^cEmBU:ghVD2djJkH4C3
+Z3 VZY?XlU3jWRL]OM`L>NWeh3
 Z4 dE:\Software Development\VHDL\Diseño Digital Con VHDL\Unidad IV\ALU\simulation\qsim
-Z5 w1623816078
+Z5 w1623852306
 Z6 8ALU.vo
 Z7 FALU.vo
 L0 31
@@ -20,24 +20,24 @@ Z10 o-work work -O0
 Z11 n@a@l@u
 !i10b 1
 !s85 0
-Z12 !s108 1623816080.414000
+Z12 !s108 1623852307.676000
 Z13 !s107 ALU.vo|
 !s101 -O0
 vALU_vlg_check_tst
 !i10b 1
-Z14 !s100 NVRTKI=PM>?0bDN2^>No80
-Z15 I;>N3<6K:KUMSW;CAcPnP11
+Z14 !s100 gTZACV78[7niAWo=[f9<Z2
+Z15 IYSB=B00a9V6HPdX:jDK2_1
 Z16 Vfm8S@6:V@WOj2l7f;N:V^0
 R4
-Z17 w1623816077
+Z17 w1623852305
 Z18 8ALU.vt
 Z19 FALU.vt
-L0 61
+L0 65
 R8
 r1
 !s85 0
 31
-Z20 !s108 1623816080.743000
+Z20 !s108 1623852309.217000
 Z21 !s107 ALU.vt|
 Z22 !s90 -work|work|ALU.vt|
 !s101 -O0
@@ -45,9 +45,9 @@ R10
 Z23 n@a@l@u_vlg_check_tst
 vALU_vlg_sample_tst
 !i10b 1
-Z24 !s100 gW7DLzg;GZV]B5K7@E>lB2
-Z25 ImE?6aVVkeS8OBYAT?=Tgi3
-Z26 VEmY^7[ZK6U9_dmk_J0V=A1
+Z24 !s100 <:]:FZoUAG^;_Ij=2mJYg3
+Z25 I]C`mAL<5:`lle?M@22]fY0
+Z26 VT5[NZkzHQ20@b]j@ilQeU2
 R4
 R17
 R18
@@ -65,14 +65,14 @@ R10
 Z27 n@a@l@u_vlg_sample_tst
 vALU_vlg_vec_tst
 !i10b 1
-Z28 !s100 ^lG6`zJ:j7b6<4=f0kV=A2
-Z29 IV4JajzOliB:h55K6g1RZX3
-Z30 V>bFnnU[^IecCM5^<l3;]W0
+!s100 HGYCQLzMdSh5:^[n?eIS63
+ISZGnnie^IzBKb;70ULL3>1
+Z28 V>bFnnU[^IecCM5^<l3;]W0
 R4
 R17
 R18
 R19
-Z31 L0 442
+Z29 L0 446
 R8
 r1
 !s85 0
@@ -82,4 +82,4 @@ R21
 R22
 !s101 -O0
 R10
-Z32 n@a@l@u_vlg_vec_tst
+Z30 n@a@l@u_vlg_vec_tst
