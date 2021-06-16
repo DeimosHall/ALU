@@ -15,12 +15,10 @@ entity ALU is
 end ALU;
 
 architecture behavioral of ALU is
-
-	signal logicGate: std_logic;
 	
 begin
 
-	process(A,B,buss) begin
+	process(A, B, buss) begin
 		case buss is
 			when "0000" =>
 				resultado <= "000" & ('0' & A) + ('0' & B);
@@ -46,26 +44,19 @@ begin
 					resultado <= "000" & (('0' & A) - 1);
 				end if;
 			when "0110" =>
-				logicGate <= C and D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C and D);
 			when "0111" =>
-				logicGate <= C or D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C or D);
 			when "1000" =>
-				logicGate <= C nor D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C nor D);
 			when "1001" =>
-				logicGate <= C nand D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C nand D);
 			when "1010" =>
-				logicGate <= C xor D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C xor D);
 			when "1011" =>
-				logicGate <= C xnor D;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (C xnor D);
 			when "1100" =>
-				logicGate <= not C;
-				resultado <= "0000000" & logicGate;
+				resultado <= "0000000" & (not C);
 			when others =>
 		end case;
 	end process;
