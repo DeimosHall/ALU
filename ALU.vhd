@@ -17,11 +17,7 @@ end ALU;
 
 architecture behavioral of ALU is
 
-	signal entrada: unsigned(std_logic_vector(3 downto 0));
-
 begin
-
-	entrada <= unsigned(A);
 
 	process(A, B, buss) begin
 		case buss is
@@ -63,11 +59,11 @@ begin
 			when "01100" =>
 				resultado <= "0000000" & (not C);
 			when "01101" =>
-				A2 <= std_logic_vector(entrada SLL to_integer(unsigned(B)));
+				A2 <= std_logic_vector(unsigned(A) SLL to_integer(unsigned(B)));
 			when "01110" =>
-				A2 <= std_logic_vector(entrada SRL to_integer(unsigned(B)));
+				A2 <= std_logic_vector(unsigned(A) SRL to_integer(unsigned(B)));
 			when "01111" =>
-				
+--				A2 <= std_logic_vector(unsigned(A) SLA to_integer(unsigned(B)));
 			when "10000" =>
 				
 			when "10001" =>
