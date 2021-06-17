@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Wed Jun 16 09:15:47 2021
+Thu Jun 17 12:04:06 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -46,16 +46,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 16 09:15:47 2021           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 17 12:04:05 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 123                                             ;
-;     Total combinational functions  ; 123                                             ;
+; Total logic elements               ; 152                                             ;
+;     Total combinational functions  ; 152                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 30                                              ;
+; Total pins                         ; 35                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -188,28 +188,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 123   ;
+; Estimated Total logic elements              ; 152   ;
 ;                                             ;       ;
-; Total combinational functions               ; 123   ;
+; Total combinational functions               ; 152   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 59    ;
-;     -- 3 input functions                    ; 48    ;
-;     -- <=2 input functions                  ; 16    ;
+;     -- 4 input functions                    ; 77    ;
+;     -- 3 input functions                    ; 55    ;
+;     -- <=2 input functions                  ; 20    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 92    ;
+;     -- normal mode                          ; 121   ;
 ;     -- arithmetic mode                      ; 31    ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 30    ;
+; I/O pins                                    ; 35    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; B[1]  ;
-; Maximum fan-out                             ; 24    ;
-; Total fan-out                               ; 410   ;
-; Average fan-out                             ; 2.68  ;
+; Maximum fan-out                             ; 32    ;
+; Total fan-out                               ; 515   ;
+; Average fan-out                             ; 2.75  ;
 +---------------------------------------------+-------+
 
 
@@ -218,33 +218,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                   ; 123 (73)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |ALU                                                                                                 ; work         ;
-;    |lpm_divide:Div0|                   ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
-;       |lpm_divide_tcm:auto_generated|  ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
-;             |alt_u_div_gve:divider|    ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
+; |ALU                                   ; 152 (103)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ALU                                                                                                 ; work         ;
+;    |lpm_divide:Div0|                   ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
+;       |lpm_divide_tcm:auto_generated|  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7kh:divider| ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
+;             |alt_u_div_gve:divider|    ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
 ;    |lpm_mult:Mult0|                    ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mult:Mult0                                                                                  ; work         ;
 ;       |mult_14t:auto_generated|        ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mult:Mult0|mult_14t:auto_generated                                                          ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; led$latch                                          ; Mux1                ; yes                    ;
-; resultado[0]$latch                                 ; Mux10               ; yes                    ;
-; resultado[1]$latch                                 ; Mux10               ; yes                    ;
-; resultado[2]$latch                                 ; Mux10               ; yes                    ;
-; resultado[3]$latch                                 ; Mux10               ; yes                    ;
-; resultado[4]$latch                                 ; Mux10               ; yes                    ;
-; resultado[5]$latch                                 ; Mux10               ; yes                    ;
-; resultado[6]$latch                                 ; Mux10               ; yes                    ;
-; resultado[7]$latch                                 ; Mux10               ; yes                    ;
-; Number of user-specified and inferred latches = 9  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; A2[0]$latch                                         ; Mux4                ; yes                    ;
+; A2[1]$latch                                         ; Mux4                ; yes                    ;
+; A2[2]$latch                                         ; Mux4                ; yes                    ;
+; A2[3]$latch                                         ; Mux4                ; yes                    ;
+; led$latch                                           ; Mux6                ; yes                    ;
+; resultado[0]$latch                                  ; Mux15               ; yes                    ;
+; resultado[1]$latch                                  ; Mux15               ; yes                    ;
+; resultado[2]$latch                                  ; Mux15               ; yes                    ;
+; resultado[3]$latch                                  ; Mux15               ; yes                    ;
+; resultado[4]$latch                                  ; Mux15               ; yes                    ;
+; resultado[5]$latch                                  ; Mux15               ; yes                    ;
+; resultado[6]$latch                                  ; Mux15               ; yes                    ;
+; resultado[7]$latch                                  ; Mux15               ; yes                    ;
+; Number of user-specified and inferred latches = 13  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -268,8 +272,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 15:1               ; 3 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |ALU|Mux3                  ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ALU|Mux9                  ;
+; 15:1               ; 3 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |ALU|Mux8                  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ALU|Mux0                  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ALU|Mux2                  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ALU|Mux14                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -356,7 +362,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -366,38 +372,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jun 16 09:15:40 2021
+    Info: Processing started: Thu Jun 17 12:04:01 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
     Info (12022): Found design unit 1: ALU-behavioral
     Info (12023): Found entity 1: ALU
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at ALU.vhd(13): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at ALU.vhd(47): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(47): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(49): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(49): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(53): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(53): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(57): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(57): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at ALU.vhd(21): inferring latch(es) for signal or variable "resultado", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at ALU.vhd(21): inferring latch(es) for signal or variable "led", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "led" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[0]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[1]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[2]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[3]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[4]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[5]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[6]" at ALU.vhd(21)
-Info (10041): Inferred latch for "resultado[7]" at ALU.vhd(21)
+Warning (10541): VHDL Signal Declaration warning at ALU.vhd(14): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at ALU.vhd(52): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(52): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(54): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(54): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(56): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(56): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(58): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(58): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(60): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(60): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(62): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(62): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(64): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(68): signal "entrada" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at ALU.vhd(26): inferring latch(es) for signal or variable "resultado", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(26): inferring latch(es) for signal or variable "led", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(26): inferring latch(es) for signal or variable "A2", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "A2[0]" at ALU.vhd(26)
+Info (10041): Inferred latch for "A2[1]" at ALU.vhd(26)
+Info (10041): Inferred latch for "A2[2]" at ALU.vhd(26)
+Info (10041): Inferred latch for "A2[3]" at ALU.vhd(26)
+Info (10041): Inferred latch for "led" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[0]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[1]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[2]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[3]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[4]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[5]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[6]" at ALU.vhd(26)
+Info (10041): Inferred latch for "resultado[7]" at ALU.vhd(26)
 Info (278001): Inferred 2 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
@@ -436,8 +449,16 @@ Warning (14284): Synthesized away the following node(s):
 Info (13014): Ignored 48 buffer(s)
     Info (13016): Ignored 4 CARRY_SUM buffer(s)
     Info (13019): Ignored 44 SOFT buffer(s)
+Warning (13012): Latch A2[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+Warning (13012): Latch A2[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+Warning (13012): Latch A2[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+Warning (13012): Latch A2[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
 Warning (13012): Latch led$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[0]
 Warning (13012): Latch resultado[0]$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
 Warning (13012): Latch resultado[1]$latch has unsafe behavior
@@ -466,14 +487,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 153 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 123 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Wed Jun 16 09:15:47 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:03
+Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 152 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Thu Jun 17 12:04:06 2021
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 
