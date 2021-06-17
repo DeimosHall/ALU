@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Jun 17 12:17:48 2021
+Thu Jun 17 13:00:54 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -46,13 +46,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 17 12:17:48 2021           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 17 13:00:53 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 152                                             ;
-;     Total combinational functions  ; 152                                             ;
+; Total logic elements               ; 165                                             ;
+;     Total combinational functions  ; 165                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 35                                              ;
@@ -188,16 +188,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 152   ;
+; Estimated Total logic elements              ; 165   ;
 ;                                             ;       ;
-; Total combinational functions               ; 152   ;
+; Total combinational functions               ; 165   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 77    ;
-;     -- 3 input functions                    ; 55    ;
-;     -- <=2 input functions                  ; 20    ;
+;     -- 4 input functions                    ; 84    ;
+;     -- 3 input functions                    ; 62    ;
+;     -- <=2 input functions                  ; 19    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 121   ;
+;     -- normal mode                          ; 134   ;
 ;     -- arithmetic mode                      ; 31    ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
@@ -207,9 +207,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 35    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; B[1]  ;
-; Maximum fan-out                             ; 32    ;
-; Total fan-out                               ; 515   ;
-; Average fan-out                             ; 2.75  ;
+; Maximum fan-out                             ; 37    ;
+; Total fan-out                               ; 562   ;
+; Average fan-out                             ; 2.81  ;
 +---------------------------------------------+-------+
 
 
@@ -218,7 +218,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                   ; 152 (103)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ALU                                                                                                 ; work         ;
+; |ALU                                   ; 165 (116)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |ALU                                                                                                 ; work         ;
 ;    |lpm_divide:Div0|                   ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
 ;       |lpm_divide_tcm:auto_generated|  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
 ;          |sign_div_unsign_7kh:divider| ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
@@ -273,8 +273,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 15:1               ; 3 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |ALU|Mux8                  ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ALU|Mux0                  ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ALU|Mux2                  ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ALU|Mux14                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
@@ -362,7 +360,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -372,7 +370,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jun 17 12:17:42 2021
+    Info: Processing started: Thu Jun 17 13:00:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
@@ -448,13 +446,13 @@ Info (13014): Ignored 48 buffer(s)
     Info (13016): Ignored 4 CARRY_SUM buffer(s)
     Info (13019): Ignored 44 SOFT buffer(s)
 Warning (13012): Latch A2[0]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
 Warning (13012): Latch A2[1]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[0]
 Warning (13012): Latch A2[2]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
 Warning (13012): Latch A2[3]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[0]
 Warning (13012): Latch led$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[0]
 Warning (13012): Latch resultado[0]$latch has unsafe behavior
@@ -485,14 +483,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 200 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 152 logic cells
+    Info (21061): Implemented 165 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 55 warnings
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Thu Jun 17 12:17:48 2021
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Thu Jun 17 13:00:54 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:04
 
 

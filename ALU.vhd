@@ -65,11 +65,11 @@ begin
 			when "01111" =>
 --				A2 <= std_logic_vector(unsigned(A) SLA to_integer(unsigned(B)));
 			when "10000" =>
-				
+--				A2 <= std_logic_vector(unsigned(A) SRA to_integer(unsigned(B)));
 			when "10001" =>
-				
+				A2 <= std_logic_vector(unsigned(A) ROL to_integer(unsigned(B)));
 			when "10010" =>
-				
+				A2 <= std_logic_vector(unsigned(A) ROR to_integer(unsigned(B)));
 			when others =>
 		end case;
 	end process;
