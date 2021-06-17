@@ -6,6 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity ALU is
 
 	port (A, B: in std_logic_vector(3 downto 0);
+			F: in bit_vector(3 downto 0);
 			C, D: in std_ulogic;
 			buss: in std_logic_vector(4 downto 0);
 			A2: out std_logic_vector(3 downto 0);
@@ -63,9 +64,9 @@ begin
 			when "01110" =>
 				A2 <= std_logic_vector(unsigned(A) SRL to_integer(unsigned(B)));
 			when "01111" =>
---				A2 <= std_logic_vector(unsigned(A) SLA to_integer(unsigned(B)));
+				A2 <= to_stdlogicvector(to_bitvector(A) SLA to_integer(unsigned(B)));
 			when "10000" =>
---				A2 <= std_logic_vector(unsigned(A) SRA to_integer(unsigned(B)));
+				A2 <= to_stdlogicvector(to_bitvector(A) SRA to_integer(unsigned(B)));
 			when "10001" =>
 				A2 <= std_logic_vector(unsigned(A) ROL to_integer(unsigned(B)));
 			when "10010" =>

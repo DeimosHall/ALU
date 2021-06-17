@@ -4,6 +4,7 @@ entity ALU is
     port(
         A               : in     vl_logic_vector(3 downto 0);
         B               : in     vl_logic_vector(3 downto 0);
+        F               : in     vl_logic_vector(3 downto 0);
         C               : in     vl_logic;
         D               : in     vl_logic;
         buss            : in     vl_logic_vector(4 downto 0);

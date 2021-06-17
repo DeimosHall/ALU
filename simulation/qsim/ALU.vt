@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/17/2021 13:02:22"
+// Generated on "06/17/2021 13:36:18"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    ALU
 // 
@@ -32,6 +32,7 @@ module ALU_vlg_sample_tst(
 	buss,
 	C,
 	D,
+	F,
 	sampler_tx
 );
 input [3:0] A;
@@ -39,11 +40,12 @@ input [3:0] B;
 input [4:0] buss;
 input  C;
 input  D;
+input [3:0] F;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(A or B or buss or C or D)
+always @(A or B or buss or C or D or F)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -531,6 +533,7 @@ reg [3:0] B;
 reg [4:0] buss;
 reg C;
 reg D;
+reg [3:0] F;
 // wires                                               
 wire [3:0] A2;
 wire [6:0] display;
@@ -549,6 +552,7 @@ ALU i1 (
 	.C(C),
 	.D(D),
 	.display(display),
+	.F(F),
 	.led(led),
 	.resultado(resultado)
 );
@@ -560,7 +564,7 @@ end
 // A[ 2 ]
 initial
 begin
-	A[2] = 1'b1;
+	A[2] = 1'b0;
 end 
 // A[ 1 ]
 initial
@@ -627,7 +631,7 @@ end
 // buss[ 0 ]
 initial
 begin
-	buss[0] = 1'b1;
+	buss[0] = 1'b0;
 end 
 
 ALU_vlg_sample_tst tb_sample (
@@ -636,6 +640,7 @@ ALU_vlg_sample_tst tb_sample (
 	.buss(buss),
 	.C(C),
 	.D(D),
+	.F(F),
 	.sampler_tx(sampler)
 );
 
