@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Jun 18 13:36:45 2021
+Fitter Status : Successful - Fri Jun 18 14:59:36 2021
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : ALU
 Top-level Entity Name : ALU
 Family : Cyclone II
 Device : EP2C5T144C8
 Timing Models : Final
-Total logic elements : 231 / 4,608 ( 5 % )
-    Total combinational functions : 230 / 4,608 ( 5 % )
+Total logic elements : 237 / 4,608 ( 5 % )
+    Total combinational functions : 236 / 4,608 ( 5 % )
     Dedicated logic registers : 19 / 4,608 ( < 1 % )
 Total registers : 19
 Total pins : 28 / 89 ( 31 % )

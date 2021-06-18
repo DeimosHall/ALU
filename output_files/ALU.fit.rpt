@@ -1,5 +1,5 @@
 Fitter report for ALU
-Fri Jun 18 13:36:45 2021
+Fri Jun 18 14:59:36 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -64,15 +64,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jun 18 13:36:45 2021           ;
+; Fitter Status                      ; Successful - Fri Jun 18 14:59:36 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5T144C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 231 / 4,608 ( 5 % )                             ;
-;     Total combinational functions  ; 230 / 4,608 ( 5 % )                             ;
+; Total logic elements               ; 237 / 4,608 ( 5 % )                             ;
+;     Total combinational functions  ; 236 / 4,608 ( 5 % )                             ;
 ;     Dedicated logic registers      ; 19 / 4,608 ( < 1 % )                            ;
 ; Total registers                    ; 19                                              ;
 ; Total pins                         ; 28 / 89 ( 31 % )                                ;
@@ -151,8 +151,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 285 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 285 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 290 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 290 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -175,7 +175,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 282     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 287     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -191,19 +191,19 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 231 / 4,608 ( 5 % )  ;
-;     -- Combinational with no register       ; 212                  ;
+; Total logic elements                        ; 237 / 4,608 ( 5 % )  ;
+;     -- Combinational with no register       ; 218                  ;
 ;     -- Register only                        ; 1                    ;
 ;     -- Combinational with a register        ; 18                   ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 110                  ;
+;     -- 4 input functions                    ; 115                  ;
 ;     -- 3 input functions                    ; 84                   ;
-;     -- <=2 input functions                  ; 36                   ;
+;     -- <=2 input functions                  ; 37                   ;
 ;     -- Register only                        ; 1                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 183                  ;
+;     -- normal mode                          ; 189                  ;
 ;     -- arithmetic mode                      ; 47                   ;
 ;                                             ;                      ;
 ; Total registers*                            ; 19 / 4,851 ( < 1 % ) ;
@@ -215,22 +215,22 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 ; I/O pins                                    ; 28 / 89 ( 31 % )     ;
 ;     -- Clock pins                           ; 1 / 4 ( 25 % )       ;
 ;                                             ;                      ;
-; Global signals                              ; 4                    ;
+; Global signals                              ; 3                    ;
 ; M4Ks                                        ; 0 / 26 ( 0 % )       ;
 ; Total block memory bits                     ; 0 / 119,808 ( 0 % )  ;
 ; Total block memory implementation bits      ; 0 / 119,808 ( 0 % )  ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 26 ( 0 % )       ;
 ; PLLs                                        ; 0 / 2 ( 0 % )        ;
-; Global clocks                               ; 4 / 8 ( 50 % )       ;
+; Global clocks                               ; 3 / 8 ( 38 % )       ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )        ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%         ;
-; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%         ;
-; Maximum fan-out                             ; 39                   ;
-; Highest non-global fan-out                  ; 39                   ;
-; Total fan-out                               ; 826                  ;
-; Average fan-out                             ; 2.90                 ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 3%         ;
+; Maximum fan-out                             ; 38                   ;
+; Highest non-global fan-out                  ; 38                   ;
+; Total fan-out                               ; 847                  ;
+; Average fan-out                             ; 2.92                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -243,19 +243,19 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 231 / 4608 ( 5 % )  ; 0 / 4608 ( 0 % )               ;
-;     -- Combinational with no register       ; 212                 ; 0                              ;
+; Total logic elements                        ; 237 / 4608 ( 5 % )  ; 0 / 4608 ( 0 % )               ;
+;     -- Combinational with no register       ; 218                 ; 0                              ;
 ;     -- Register only                        ; 1                   ; 0                              ;
 ;     -- Combinational with a register        ; 18                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 110                 ; 0                              ;
+;     -- 4 input functions                    ; 115                 ; 0                              ;
 ;     -- 3 input functions                    ; 84                  ; 0                              ;
-;     -- <=2 input functions                  ; 36                  ; 0                              ;
+;     -- <=2 input functions                  ; 37                  ; 0                              ;
 ;     -- Register only                        ; 1                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 183                 ; 0                              ;
+;     -- normal mode                          ; 189                 ; 0                              ;
 ;     -- arithmetic mode                      ; 47                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 19                  ; 0                              ;
@@ -268,7 +268,7 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 ; Embedded Multiplier 9-bit elements          ; 0 / 26 ( 0 % )      ; 0 / 26 ( 0 % )                 ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
-; Clock control block                         ; 4 / 10 ( 40 % )     ; 0 / 10 ( 0 % )                 ;
+; Clock control block                         ; 3 / 10 ( 30 % )     ; 0 / 10 ( 0 % )                 ;
 ;                                             ;                     ;                                ;
 ; Connections                                 ;                     ;                                ;
 ;     -- Input Connections                    ; 0                   ; 0                              ;
@@ -277,7 +277,7 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 826                 ; 0                              ;
+;     -- Total Connections                    ; 847                 ; 0                              ;
 ;     -- Registered Connections               ; 36                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -310,19 +310,19 @@ The pin-out file can be found in E:/Software Development/VHDL/Diseño Digital Con
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; A[0]    ; 96    ; 3        ; 28           ; 9            ; 1           ; 27                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; A[0]    ; 96    ; 3        ; 28           ; 9            ; 1           ; 29                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A[1]    ; 97    ; 3        ; 28           ; 9            ; 0           ; 23                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A[2]    ; 100   ; 3        ; 28           ; 11           ; 1           ; 22                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; A[3]    ; 101   ; 3        ; 28           ; 11           ; 0           ; 24                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; A[3]    ; 101   ; 3        ; 28           ; 11           ; 0           ; 26                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; B[0]    ; 87    ; 3        ; 28           ; 6            ; 0           ; 31                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; B[1]    ; 92    ; 3        ; 28           ; 8            ; 1           ; 39                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; B[1]    ; 92    ; 3        ; 28           ; 8            ; 1           ; 38                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; B[2]    ; 93    ; 3        ; 28           ; 8            ; 0           ; 20                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; B[3]    ; 94    ; 3        ; 28           ; 9            ; 2           ; 22                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; buss[0] ; 133   ; 2        ; 7            ; 14           ; 0           ; 26                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; buss[1] ; 134   ; 2        ; 7            ; 14           ; 1           ; 33                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; buss[2] ; 135   ; 2        ; 3            ; 14           ; 0           ; 17                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; buss[3] ; 136   ; 2        ; 3            ; 14           ; 1           ; 20                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; buss[4] ; 137   ; 2        ; 3            ; 14           ; 2           ; 6                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; buss[0] ; 133   ; 2        ; 7            ; 14           ; 0           ; 29                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; buss[1] ; 134   ; 2        ; 7            ; 14           ; 1           ; 31                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; buss[2] ; 135   ; 2        ; 3            ; 14           ; 0           ; 22                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; buss[3] ; 136   ; 2        ; 3            ; 14           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; buss[4] ; 137   ; 2        ; 3            ; 14           ; 2           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; clk     ; 17    ; 1        ; 0            ; 6            ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
@@ -556,11 +556,11 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                  ; Library Name ;
 +----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                   ; 231 (183)   ; 19 (19)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 28   ; 0            ; 212 (164)    ; 1 (1)             ; 18 (18)          ; |ALU                                                                                                 ; work         ;
-;    |lpm_divide:Div0|                   ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
-;       |lpm_divide_tcm:auto_generated|  ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
-;             |alt_u_div_gve:divider|    ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
+; |ALU                                   ; 237 (190)   ; 19 (19)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 28   ; 0            ; 218 (171)    ; 1 (1)             ; 18 (18)          ; |ALU                                                                                                 ; work         ;
+;    |lpm_divide:Div0|                   ; 16 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
+;       |lpm_divide_tcm:auto_generated|  ; 16 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7kh:divider| ; 16 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
+;             |alt_u_div_gve:divider|    ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 0 (0)            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
 ;    |lpm_mult:Mult0|                    ; 31 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_mult:Mult0                                                                                  ; work         ;
 ;       |mult_14t:auto_generated|        ; 31 (31)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (31)      ; 0 (0)             ; 0 (0)            ; |ALU|lpm_mult:Mult0|mult_14t:auto_generated                                                          ; work         ;
 +----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------+--------------+
@@ -586,19 +586,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; segmentos[4] ; Output   ; --            ; --            ; --                    ; --  ;
 ; segmentos[5] ; Output   ; --            ; --            ; --                    ; --  ;
 ; segmentos[6] ; Output   ; --            ; --            ; --                    ; --  ;
-; buss[0]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; B[0]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; A[0]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; buss[1]      ; Input    ; (1) 643 ps    ; (0) 170 ps    ; --                    ; --  ;
-; buss[3]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; buss[4]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; buss[2]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; buss[0]      ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; buss[1]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; B[0]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; A[1]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; A[3]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; B[1]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; A[2]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; A[0]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; B[2]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; B[3]         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; buss[4]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; buss[3]      ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
 ; clk          ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +--------------+----------+---------------+---------------+-----------------------+-----+
 
@@ -608,185 +608,152 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                                                                                              ; Pad To Core Index ; Setting ;
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
-; buss[0]                                                                                                                          ;                   ;         ;
-;      - Mux25~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~1                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux30~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~6                                                                                                                   ; 0                 ; 6       ;
+; buss[4]                                                                                                                          ;                   ;         ;
+;      - Mux25~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~10                                                                                                                  ; 0                 ; 6       ;
+;      - Mux29~1                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~13                                                                                                                  ; 0                 ; 6       ;
+;      - Mux30~1                                                                                                                   ; 0                 ; 6       ;
+;      - Mux39~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~14                                                                                                                  ; 0                 ; 6       ;
+; buss[2]                                                                                                                          ;                   ;         ;
 ;      - Mux25~8                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux25~9                                                                                                                   ; 0                 ; 6       ;
-;      - Mux29~1                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~6                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~13                                                                                                                  ; 0                 ; 6       ;
-;      - Mux27~6                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~7                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~13                                                                                                                  ; 1                 ; 6       ;
-;      - Mux28~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux37~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux37~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux40~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~9                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~11                                                                                                                  ; 0                 ; 6       ;
-;      - Mux32~12                                                                                                                  ; 0                 ; 6       ;
-;      - Mux32~13                                                                                                                  ; 0                 ; 6       ;
-;      - Mux32~14                                                                                                                  ; 0                 ; 6       ;
-;      - Mux32~15                                                                                                                  ; 0                 ; 6       ;
-; B[0]                                                                                                                             ;                   ;         ;
-;      - Add0~0                                                                                                                    ; 0                 ; 6       ;
-;      - Add2~0                                                                                                                    ; 0                 ; 6       ;
-;      - Add1~0                                                                                                                    ; 0                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[0]~0 ; 0                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[0]~1 ; 0                 ; 6       ;
-;      - Mux25~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~4                                                                                                                   ; 0                 ; 6       ;
-;      - RotateRight0~0                                                                                                            ; 0                 ; 6       ;
-;      - Mux27~2                                                                                                                   ; 0                 ; 6       ;
-;      - ShiftLeft0~0                                                                                                              ; 0                 ; 6       ;
-;      - Mux26~1                                                                                                                   ; 0                 ; 6       ;
-;      - RotateLeft0~0                                                                                                             ; 0                 ; 6       ;
-;      - Mux26~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~9                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~10                                                                                                                  ; 0                 ; 6       ;
-;      - Mux27~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~10                                                                                                                  ; 0                 ; 6       ;
-;      - Mux28~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux28~6                                                                                                                   ; 0                 ; 6       ;
-;      - LessThan0~0                                                                                                               ; 0                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 0                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[4]~2             ; 0                 ; 6       ;
-;      - Mux35~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux36~3                                                                                                                   ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 0                 ; 6       ;
-; A[0]                                                                                                                             ;                   ;         ;
-;      - Add0~0                                                                                                                    ; 0                 ; 6       ;
-;      - Add2~0                                                                                                                    ; 0                 ; 6       ;
-;      - Add1~0                                                                                                                    ; 0                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[0]~1 ; 0                 ; 6       ;
-;      - Mux25~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux28~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux25~9                                                                                                                   ; 0                 ; 6       ;
-;      - RotateLeft0~0                                                                                                             ; 0                 ; 6       ;
-;      - Mux26~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~10                                                                                                                  ; 0                 ; 6       ;
-;      - Mux27~7                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux28~3                                                                                                                   ; 0                 ; 6       ;
-;      - Equal0~0                                                                                                                  ; 0                 ; 6       ;
-;      - LessThan0~0                                                                                                               ; 0                 ; 6       ;
-;      - Mux37~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~11                                                                                                                  ; 0                 ; 6       ;
-;      - Mux34                                                                                                                     ; 0                 ; 6       ;
-;      - Mux35~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux36~4                                                                                                                   ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[1]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 0                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 0                 ; 6       ;
-; buss[1]                                                                                                                          ;                   ;         ;
-;      - Mux25~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux25~1                                                                                                                   ; 0                 ; 1       ;
-;      - Mux25~2                                                                                                                   ; 1                 ; 0       ;
-;      - Mux30~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux25~5                                                                                                                   ; 1                 ; 0       ;
-;      - Mux25~9                                                                                                                   ; 1                 ; 0       ;
-;      - Mux29~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux29~1                                                                                                                   ; 1                 ; 0       ;
-;      - Mux26~3                                                                                                                   ; 1                 ; 0       ;
-;      - Mux26~4                                                                                                                   ; 1                 ; 0       ;
-;      - Mux26~5                                                                                                                   ; 0                 ; 1       ;
-;      - Mux26~7                                                                                                                   ; 1                 ; 0       ;
-;      - Mux26~11                                                                                                                  ; 0                 ; 1       ;
-;      - Mux27~4                                                                                                                   ; 1                 ; 0       ;
-;      - Mux27~5                                                                                                                   ; 1                 ; 0       ;
-;      - Mux28~1                                                                                                                   ; 1                 ; 0       ;
-;      - Mux27~8                                                                                                                   ; 1                 ; 0       ;
-;      - Mux27~9                                                                                                                   ; 1                 ; 0       ;
-;      - Mux28~4                                                                                                                   ; 1                 ; 0       ;
-;      - Mux28~7                                                                                                                   ; 0                 ; 1       ;
-;      - Mux37~4                                                                                                                   ; 1                 ; 0       ;
-;      - Mux33~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux40~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux38~0                                                                                                                   ; 1                 ; 0       ;
-;      - Mux38~1                                                                                                                   ; 0                 ; 1       ;
-;      - Mux39~0                                                                                                                   ; 0                 ; 1       ;
-;      - Mux40~1                                                                                                                   ; 0                 ; 1       ;
-;      - Mux32~8                                                                                                                   ; 1                 ; 0       ;
-;      - Mux32~9                                                                                                                   ; 1                 ; 0       ;
-;      - Mux27~14                                                                                                                  ; 0                 ; 1       ;
-;      - Mux32~12                                                                                                                  ; 1                 ; 0       ;
-;      - Mux32~13                                                                                                                  ; 1                 ; 0       ;
-;      - Mux32~14                                                                                                                  ; 0                 ; 1       ;
-; buss[3]                                                                                                                          ;                   ;         ;
-;      - Mux25~7                                                                                                                   ; 1                 ; 6       ;
-;      - Mux25~10                                                                                                                  ; 1                 ; 6       ;
-;      - Mux29~0                                                                                                                   ; 1                 ; 6       ;
-;      - Mux29~1                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~3                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~6                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~7                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~9                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~10                                                                                                                  ; 1                 ; 6       ;
-;      - Mux26~12                                                                                                                  ; 1                 ; 6       ;
-;      - Mux27~6                                                                                                                   ; 1                 ; 6       ;
-;      - Mux28~1                                                                                                                   ; 1                 ; 6       ;
-;      - Mux27~9                                                                                                                   ; 1                 ; 6       ;
-;      - Mux27~12                                                                                                                  ; 1                 ; 6       ;
-;      - Mux28~4                                                                                                                   ; 1                 ; 6       ;
-;      - Mux28~7                                                                                                                   ; 1                 ; 6       ;
-;      - Mux30~2                                                                                                                   ; 1                 ; 6       ;
-;      - Mux37~5                                                                                                                   ; 1                 ; 6       ;
-;      - Mux33~0                                                                                                                   ; 1                 ; 6       ;
-;      - Mux27~14                                                                                                                  ; 1                 ; 6       ;
-; buss[2]                                                                                                                          ;                   ;         ;
-;      - Mux25~7                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux29~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux29~1                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~12                                                                                                                  ; 0                 ; 6       ;
+;      - Mux26~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~13                                                                                                                  ; 0                 ; 6       ;
+;      - Mux30~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux39~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~1                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~9                                                                                                                   ; 0                 ; 6       ;
+;      - Mux34~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux34~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux35~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux35~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~10                                                                                                                  ; 0                 ; 6       ;
+;      - Mux25~15                                                                                                                  ; 0                 ; 6       ;
+; buss[0]                                                                                                                          ;                   ;         ;
+;      - Mux30~0                                                                                                                   ; 0                 ; 0       ;
+;      - Mux25~5                                                                                                                   ; 1                 ; 0       ;
+;      - Mux25~6                                                                                                                   ; 1                 ; 0       ;
+;      - Mux25~7                                                                                                                   ; 1                 ; 0       ;
+;      - Mux29~0                                                                                                                   ; 1                 ; 0       ;
+;      - Mux31~0                                                                                                                   ; 0                 ; 0       ;
+;      - Mux26~8                                                                                                                   ; 1                 ; 0       ;
+;      - Mux26~12                                                                                                                  ; 1                 ; 0       ;
+;      - Mux27~5                                                                                                                   ; 1                 ; 0       ;
+;      - Mux27~6                                                                                                                   ; 1                 ; 0       ;
+;      - Mux27~9                                                                                                                   ; 1                 ; 0       ;
+;      - Mux27~11                                                                                                                  ; 1                 ; 0       ;
+;      - Mux28~6                                                                                                                   ; 1                 ; 0       ;
+;      - Mux30~1                                                                                                                   ; 1                 ; 0       ;
+;      - Mux39~1                                                                                                                   ; 1                 ; 0       ;
+;      - Mux36~2                                                                                                                   ; 1                 ; 0       ;
+;      - Mux36~4                                                                                                                   ; 1                 ; 0       ;
+;      - Mux39~2                                                                                                                   ; 1                 ; 0       ;
+;      - Mux31~2                                                                                                                   ; 0                 ; 0       ;
+;      - Mux25~11                                                                                                                  ; 1                 ; 0       ;
+;      - Mux25~12                                                                                                                  ; 1                 ; 0       ;
+;      - Mux33~2                                                                                                                   ; 1                 ; 0       ;
+;      - Mux33~5                                                                                                                   ; 0                 ; 0       ;
+;      - Mux25~13                                                                                                                  ; 1                 ; 0       ;
+;      - Mux28~8                                                                                                                   ; 1                 ; 0       ;
+;      - Mux36~6                                                                                                                   ; 1                 ; 0       ;
+;      - Mux33~10                                                                                                                  ; 0                 ; 0       ;
+;      - Mux28~10                                                                                                                  ; 1                 ; 0       ;
+;      - Mux25~14                                                                                                                  ; 1                 ; 0       ;
+; buss[1]                                                                                                                          ;                   ;         ;
+;      - Mux30~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~7                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~8                                                                                                                   ; 0                 ; 6       ;
+;      - Mux29~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~7                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~10                                                                                                                  ; 0                 ; 6       ;
+;      - Mux26~11                                                                                                                  ; 0                 ; 6       ;
+;      - Mux27~7                                                                                                                   ; 0                 ; 6       ;
+;      - Mux27~11                                                                                                                  ; 0                 ; 6       ;
+;      - Mux28~5                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux30~1                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux39~2                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux37~0                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux37~1                                                                                                                   ; 0                 ; 6       ;
-;      - Mux37~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux33~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux40~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32                                                                                                                     ; 0                 ; 6       ;
-;      - Mux34~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux35~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux36~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux32~14                                                                                                                  ; 0                 ; 6       ;
-;      - Mux32~15                                                                                                                  ; 0                 ; 6       ;
+;      - Mux38~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux39~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux31~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux33~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux34~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux35~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux28~8                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~6                                                                                                                   ; 0                 ; 6       ;
+;      - Mux28~9                                                                                                                   ; 0                 ; 6       ;
+;      - Mux28~10                                                                                                                  ; 0                 ; 6       ;
+;      - Mux25~15                                                                                                                  ; 0                 ; 6       ;
+; B[0]                                                                                                                             ;                   ;         ;
+;      - Add0~0                                                                                                                    ; 1                 ; 6       ;
+;      - Add2~0                                                                                                                    ; 1                 ; 6       ;
+;      - Add1~0                                                                                                                    ; 1                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[0]~0 ; 1                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[0]~1 ; 1                 ; 6       ;
+;      - Mux25~2                                                                                                                   ; 1                 ; 6       ;
+;      - Mux25~3                                                                                                                   ; 1                 ; 6       ;
+;      - RotateRight0~0                                                                                                            ; 1                 ; 6       ;
+;      - RotateRight0~1                                                                                                            ; 1                 ; 6       ;
+;      - Mux25~5                                                                                                                   ; 1                 ; 6       ;
+;      - Mux28~3                                                                                                                   ; 1                 ; 6       ;
+;      - Mux25~7                                                                                                                   ; 1                 ; 6       ;
+;      - ShiftRight0~1                                                                                                             ; 1                 ; 6       ;
+;      - Mux26~5                                                                                                                   ; 1                 ; 6       ;
+;      - RotateLeft0~0                                                                                                             ; 1                 ; 6       ;
+;      - RotateLeft0~1                                                                                                             ; 1                 ; 6       ;
+;      - RotateRight0~2                                                                                                            ; 1                 ; 6       ;
+;      - ShiftLeft1~0                                                                                                              ; 1                 ; 6       ;
+;      - Mux27~4                                                                                                                   ; 1                 ; 6       ;
+;      - RotateLeft0~2                                                                                                             ; 1                 ; 6       ;
+;      - Mux28~4                                                                                                                   ; 1                 ; 6       ;
+;      - LessThan0~0                                                                                                               ; 1                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 1                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[4]~2             ; 1                 ; 6       ;
+;      - Mux34~3                                                                                                                   ; 1                 ; 6       ;
+;      - Mux35~3                                                                                                                   ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 1                 ; 6       ;
 ; A[1]                                                                                                                             ;                   ;         ;
 ;      - Add2~2                                                                                                                    ; 0                 ; 6       ;
 ;      - Add0~2                                                                                                                    ; 0                 ; 6       ;
 ;      - Add1~2                                                                                                                    ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[0]~0 ; 0                 ; 6       ;
-;      - Mux25~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
+;      - RotateRight0~1                                                                                                            ; 0                 ; 6       ;
+;      - ShiftRight0~1                                                                                                             ; 0                 ; 6       ;
+;      - Mux26~6                                                                                                                   ; 0                 ; 6       ;
 ;      - RotateLeft0~0                                                                                                             ; 0                 ; 6       ;
-;      - Mux26~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~8                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~10                                                                                                                  ; 0                 ; 6       ;
-;      - Mux28~6                                                                                                                   ; 0                 ; 6       ;
+;      - ShiftLeft1~0                                                                                                              ; 0                 ; 6       ;
+;      - Mux28~4                                                                                                                   ; 0                 ; 6       ;
 ;      - Equal0~0                                                                                                                  ; 0                 ; 6       ;
 ;      - LessThan0~0                                                                                                               ; 0                 ; 6       ;
-;      - Mux37~0                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~3                                                                                                                   ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[8]~5             ; 0                 ; 6       ;
-;      - Mux34                                                                                                                     ; 0                 ; 6       ;
+;      - Mux33~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux34~4                                                                                                                   ; 0                 ; 6       ;
 ;      - Mux35~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux36~4                                                                                                                   ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[2]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[1]                                                                            ; 0                 ; 6       ;
@@ -796,100 +763,129 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Add2~6                                                                                                                    ; 0                 ; 6       ;
 ;      - Add0~6                                                                                                                    ; 0                 ; 6       ;
 ;      - Add1~6                                                                                                                    ; 0                 ; 6       ;
-;      - Mux25~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
 ;      - RotateRight0~0                                                                                                            ; 0                 ; 6       ;
-;      - Mux25~5                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~1                                                                                                                   ; 0                 ; 6       ;
-;      - Mux26~9                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~4                                                                                                                   ; 0                 ; 6       ;
-;      - Mux27~8                                                                                                                   ; 0                 ; 6       ;
+;      - Mux25~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~5                                                                                                                   ; 0                 ; 6       ;
+;      - RotateLeft0~1                                                                                                             ; 0                 ; 6       ;
+;      - Mux26~10                                                                                                                  ; 0                 ; 6       ;
+;      - RotateRight0~2                                                                                                            ; 0                 ; 6       ;
+;      - RotateLeft0~2                                                                                                             ; 0                 ; 6       ;
+;      - Mux27~10                                                                                                                  ; 0                 ; 6       ;
 ;      - Mux28~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux28~6                                                                                                                   ; 0                 ; 6       ;
 ;      - Equal0~0                                                                                                                  ; 0                 ; 6       ;
 ;      - LessThan0~2                                                                                                               ; 0                 ; 6       ;
-;      - Mux37~1                                                                                                                   ; 0                 ; 6       ;
+;      - Mux36~4                                                                                                                   ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~1             ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 0                 ; 6       ;
-;      - Mux36~3                                                                                                                   ; 0                 ; 6       ;
-;      - Mux36~5                                                                                                                   ; 0                 ; 6       ;
+;      - Mux35~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux35~5                                                                                                                   ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[3]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 0                 ; 6       ;
 ; B[1]                                                                                                                             ;                   ;         ;
-;      - Add2~2                                                                                                                    ; 1                 ; 6       ;
-;      - Add0~2                                                                                                                    ; 1                 ; 6       ;
-;      - Add1~2                                                                                                                    ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[1]~2 ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[1]~3 ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|op_3~0                                                                             ; 1                 ; 6       ;
-;      - Mux25~3                                                                                                                   ; 1                 ; 6       ;
-;      - Mux28~0                                                                                                                   ; 1                 ; 6       ;
-;      - ShiftRight0~0                                                                                                             ; 1                 ; 6       ;
-;      - ShiftLeft0~0                                                                                                              ; 1                 ; 6       ;
-;      - Mux26~0                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~2                                                                                                                   ; 1                 ; 6       ;
-;      - ShiftRight1~0                                                                                                             ; 1                 ; 6       ;
-;      - Mux26~7                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~11                                                                                                                  ; 1                 ; 6       ;
-;      - Mux27~5                                                                                                                   ; 1                 ; 6       ;
-;      - Mux27~10                                                                                                                  ; 1                 ; 6       ;
-;      - Mux27~11                                                                                                                  ; 1                 ; 6       ;
-;      - Mux27~12                                                                                                                  ; 1                 ; 6       ;
-;      - Mux28~2                                                                                                                   ; 1                 ; 6       ;
-;      - Mux28~4                                                                                                                   ; 1                 ; 6       ;
-;      - Mux28~6                                                                                                                   ; 1                 ; 6       ;
-;      - LessThan0~0                                                                                                               ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|cs2a[1]~0                                                                          ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[1]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]                                                                            ; 1                 ; 6       ;
+;      - Add2~2                                                                                                                    ; 0                 ; 6       ;
+;      - Add0~2                                                                                                                    ; 0                 ; 6       ;
+;      - Add1~2                                                                                                                    ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[1]~2 ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[1]~3 ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|op_3~0                                                                             ; 0                 ; 6       ;
+;      - Mux25~2                                                                                                                   ; 0                 ; 6       ;
+;      - Mux28~2                                                                                                                   ; 0                 ; 6       ;
+;      - ShiftRight0~0                                                                                                             ; 0                 ; 6       ;
+;      - Mux28~3                                                                                                                   ; 0                 ; 6       ;
+;      - Mux26~5                                                                                                                   ; 0                 ; 6       ;
+;      - ShiftLeft0~1                                                                                                              ; 0                 ; 6       ;
+;      - Mux26~9                                                                                                                   ; 0                 ; 6       ;
+;      - RotateRight0~2                                                                                                            ; 0                 ; 6       ;
+;      - Mux26~11                                                                                                                  ; 0                 ; 6       ;
+;      - Mux27~4                                                                                                                   ; 0                 ; 6       ;
+;      - Mux27~8                                                                                                                   ; 0                 ; 6       ;
+;      - RotateLeft0~2                                                                                                             ; 0                 ; 6       ;
+;      - Mux27~9                                                                                                                   ; 0                 ; 6       ;
+;      - RotateLeft0~3                                                                                                             ; 0                 ; 6       ;
+;      - Mux28~4                                                                                                                   ; 0                 ; 6       ;
+;      - LessThan0~0                                                                                                               ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|cs2a[1]~0                                                                          ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[1]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]                                                                            ; 0                 ; 6       ;
 ; A[2]                                                                                                                             ;                   ;         ;
 ;      - Add2~4                                                                                                                    ; 1                 ; 6       ;
 ;      - Add0~4                                                                                                                    ; 1                 ; 6       ;
 ;      - Add1~4                                                                                                                    ; 1                 ; 6       ;
-;      - Mux28~0                                                                                                                   ; 1                 ; 6       ;
+;      - Mux28~2                                                                                                                   ; 1                 ; 6       ;
 ;      - RotateRight0~0                                                                                                            ; 1                 ; 6       ;
-;      - Mux26~1                                                                                                                   ; 1                 ; 6       ;
-;      - Mux26~8                                                                                                                   ; 1                 ; 6       ;
-;      - Mux27~4                                                                                                                   ; 1                 ; 6       ;
+;      - ShiftRight0~1                                                                                                             ; 1                 ; 6       ;
+;      - RotateLeft0~1                                                                                                             ; 1                 ; 6       ;
+;      - ShiftLeft1~0                                                                                                              ; 1                 ; 6       ;
 ;      - Mux27~10                                                                                                                  ; 1                 ; 6       ;
 ;      - Equal0~0                                                                                                                  ; 1                 ; 6       ;
 ;      - LessThan0~1                                                                                                               ; 1                 ; 6       ;
-;      - Mux37~0                                                                                                                   ; 1                 ; 6       ;
+;      - Mux36~3                                                                                                                   ; 1                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 1                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[4]~2             ; 1                 ; 6       ;
-;      - Mux35~3                                                                                                                   ; 1                 ; 6       ;
-;      - Mux35~5                                                                                                                   ; 1                 ; 6       ;
-;      - Mux36~4                                                                                                                   ; 1                 ; 6       ;
+;      - Mux34~3                                                                                                                   ; 1                 ; 6       ;
+;      - Mux34~5                                                                                                                   ; 1                 ; 6       ;
+;      - Mux35~4                                                                                                                   ; 1                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[2]                                                                            ; 1                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 1                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[2]                                                                            ; 1                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[3]                                                                            ; 1                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 1                 ; 6       ;
+; A[0]                                                                                                                             ;                   ;         ;
+;      - Add0~0                                                                                                                    ; 1                 ; 6       ;
+;      - Add2~0                                                                                                                    ; 1                 ; 6       ;
+;      - Add1~0                                                                                                                    ; 1                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[0]~1 ; 1                 ; 6       ;
+;      - Mux28~2                                                                                                                   ; 1                 ; 6       ;
+;      - RotateRight0~1                                                                                                            ; 1                 ; 6       ;
+;      - Mux25~5                                                                                                                   ; 1                 ; 6       ;
+;      - Mux25~6                                                                                                                   ; 1                 ; 6       ;
+;      - Mux25~7                                                                                                                   ; 1                 ; 6       ;
+;      - Mux26~6                                                                                                                   ; 1                 ; 6       ;
+;      - RotateLeft0~0                                                                                                             ; 1                 ; 6       ;
+;      - RotateRight0~2                                                                                                            ; 1                 ; 6       ;
+;      - Mux27~4                                                                                                                   ; 1                 ; 6       ;
+;      - Mux27~5                                                                                                                   ; 1                 ; 6       ;
+;      - RotateLeft0~2                                                                                                             ; 1                 ; 6       ;
+;      - Equal0~0                                                                                                                  ; 1                 ; 6       ;
+;      - LessThan0~0                                                                                                               ; 1                 ; 6       ;
+;      - Mux36~3                                                                                                                   ; 1                 ; 6       ;
+;      - Mux31~4                                                                                                                   ; 1                 ; 6       ;
+;      - Mux33~3                                                                                                                   ; 1                 ; 6       ;
+;      - Mux34~4                                                                                                                   ; 1                 ; 6       ;
+;      - Mux35~4                                                                                                                   ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[1]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[1]                                                                            ; 1                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le3a[0]                                                                            ; 1                 ; 6       ;
+;      - Mux25~13                                                                                                                  ; 1                 ; 6       ;
+;      - Mux28~9                                                                                                                   ; 1                 ; 6       ;
 ; B[2]                                                                                                                             ;                   ;         ;
 ;      - Add2~4                                                                                                                    ; 0                 ; 6       ;
 ;      - Add0~4                                                                                                                    ; 0                 ; 6       ;
 ;      - Add1~4                                                                                                                    ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[2]~4 ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[2]~5 ; 0                 ; 6       ;
-;      - Mux27~3                                                                                                                   ; 0                 ; 6       ;
 ;      - ShiftLeft0~0                                                                                                              ; 0                 ; 6       ;
-;      - ShiftRight1~0                                                                                                             ; 0                 ; 6       ;
-;      - Mux27~9                                                                                                                   ; 0                 ; 6       ;
+;      - ShiftLeft0~1                                                                                                              ; 0                 ; 6       ;
 ;      - LessThan0~1                                                                                                               ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 0                 ; 6       ;
 ;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~1             ; 0                 ; 6       ;
@@ -901,36 +897,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 0                 ; 6       ;
 ;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 0                 ; 6       ;
+;      - Mux26~15                                                                                                                  ; 0                 ; 6       ;
+;      - Mux27~13                                                                                                                  ; 0                 ; 6       ;
 ; B[3]                                                                                                                             ;                   ;         ;
-;      - Add2~6                                                                                                                    ; 1                 ; 6       ;
-;      - Add0~6                                                                                                                    ; 1                 ; 6       ;
-;      - Add1~6                                                                                                                    ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[3]~7 ; 1                 ; 6       ;
-;      - Mux27~3                                                                                                                   ; 1                 ; 6       ;
-;      - ShiftLeft0~0                                                                                                              ; 1                 ; 6       ;
-;      - ShiftRight1~0                                                                                                             ; 1                 ; 6       ;
-;      - Mux27~9                                                                                                                   ; 1                 ; 6       ;
-;      - LessThan0~2                                                                                                               ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~1             ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[10]~3            ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[9]~4             ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[8]~5             ; 1                 ; 6       ;
-;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[10]               ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[1]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 1                 ; 6       ;
-;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 1                 ; 6       ;
-; buss[4]                                                                                                                          ;                   ;         ;
-;      - Mux29~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux29~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux30~2                                                                                                                   ; 0                 ; 6       ;
-;      - Mux31~0                                                                                                                   ; 0                 ; 6       ;
-;      - Mux37~5                                                                                                                   ; 0                 ; 6       ;
-;      - Mux33~0                                                                                                                   ; 0                 ; 6       ;
+;      - Add2~6                                                                                                                    ; 0                 ; 6       ;
+;      - Add0~6                                                                                                                    ; 0                 ; 6       ;
+;      - Add1~6                                                                                                                    ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_3_result_int[3]~7 ; 0                 ; 6       ;
+;      - ShiftLeft0~0                                                                                                              ; 0                 ; 6       ;
+;      - ShiftLeft0~1                                                                                                              ; 0                 ; 6       ;
+;      - LessThan0~2                                                                                                               ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~1             ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[10]~3            ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[9]~4             ; 0                 ; 6       ;
+;      - lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[8]~5             ; 0                 ; 6       ;
+;      - Mux33~8                                                                                                                   ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[0]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[0]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[1]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 0                 ; 6       ;
+;      - lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 0                 ; 6       ;
+;      - Mux26~15                                                                                                                  ; 0                 ; 6       ;
+;      - Mux27~13                                                                                                                  ; 0                 ; 6       ;
+; buss[3]                                                                                                                          ;                   ;         ;
+;      - Mux25~10                                                                                                                  ; 1                 ; 6       ;
+;      - Mux29~0                                                                                                                   ; 1                 ; 6       ;
+;      - Mux26~4                                                                                                                   ; 1                 ; 6       ;
+;      - Mux26~13                                                                                                                  ; 1                 ; 6       ;
+;      - Mux30~1                                                                                                                   ; 1                 ; 6       ;
+;      - Mux39~0                                                                                                                   ; 1                 ; 6       ;
+;      - Mux31~2                                                                                                                   ; 1                 ; 6       ;
 ; clk                                                                                                                              ;                   ;         ;
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
@@ -940,26 +939,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name         ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; LessThan1~3  ; LCCOMB_X3_Y11_N18 ; 19      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; Mux21~0      ; LCCOMB_X4_Y11_N16 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; Mux29~2      ; LCCOMB_X9_Y11_N26 ; 4       ; Latch enable ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; Mux31~0      ; LCCOMB_X9_Y11_N6  ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; Mux33~0      ; LCCOMB_X1_Y6_N28  ; 8       ; Latch enable ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; LessThan1~3  ; LCCOMB_X12_Y7_N22 ; 19      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Mux21~0      ; LCCOMB_X7_Y7_N12  ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; Mux29~1      ; LCCOMB_X7_Y10_N4  ; 13      ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
 ; clk          ; PIN_17            ; 19      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; seleccion[1] ; LCFF_X4_Y11_N21   ; 3       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; seleccion[1] ; LCFF_X7_Y7_N5     ; 3       ; Latch enable ; no     ; --                   ; --               ; --                        ;
 +--------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                 ;
-+---------+-------------------+---------+----------------------+------------------+---------------------------+
-; Name    ; Location          ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------+-------------------+---------+----------------------+------------------+---------------------------+
-; Mux21~0 ; LCCOMB_X4_Y11_N16 ; 7       ; Global Clock         ; GCLK1            ; --                        ;
-; Mux29~2 ; LCCOMB_X9_Y11_N26 ; 4       ; Global Clock         ; GCLK3            ; --                        ;
-; Mux33~0 ; LCCOMB_X1_Y6_N28  ; 8       ; Global Clock         ; GCLK0            ; --                        ;
-; clk     ; PIN_17            ; 19      ; Global Clock         ; GCLK2            ; --                        ;
-+---------+-------------------+---------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                ;
++---------+------------------+---------+----------------------+------------------+---------------------------+
+; Name    ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------+------------------+---------+----------------------+------------------+---------------------------+
+; Mux21~0 ; LCCOMB_X7_Y7_N12 ; 7       ; Global Clock         ; GCLK3            ; --                        ;
+; Mux29~1 ; LCCOMB_X7_Y10_N4 ; 13      ; Global Clock         ; GCLK1            ; --                        ;
+; clk     ; PIN_17           ; 19      ; Global Clock         ; GCLK2            ; --                        ;
++---------+------------------+---------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -967,20 +963,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                                      ; Fan-Out ;
 +---------------------------------------------------------------------------------------------------------------------------+---------+
-; B[1]                                                                                                                      ; 39      ;
-; buss[1]                                                                                                                   ; 33      ;
+; B[1]                                                                                                                      ; 38      ;
 ; B[0]                                                                                                                      ; 31      ;
-; A[0]                                                                                                                      ; 27      ;
-; buss[0]                                                                                                                   ; 26      ;
-; A[3]                                                                                                                      ; 24      ;
+; buss[1]                                                                                                                   ; 31      ;
+; A[0]                                                                                                                      ; 29      ;
+; buss[0]                                                                                                                   ; 29      ;
+; A[3]                                                                                                                      ; 26      ;
 ; A[1]                                                                                                                      ; 23      ;
 ; B[3]                                                                                                                      ; 22      ;
 ; A[2]                                                                                                                      ; 22      ;
+; buss[2]                                                                                                                   ; 22      ;
 ; B[2]                                                                                                                      ; 20      ;
-; buss[3]                                                                                                                   ; 20      ;
 ; LessThan1~3                                                                                                               ; 19      ;
-; buss[2]                                                                                                                   ; 17      ;
 ; mostrarDisplay[1]                                                                                                         ; 10      ;
+; buss[4]                                                                                                                   ; 9       ;
 ; resultado[3]                                                                                                              ; 8       ;
 ; resultado[2]                                                                                                              ; 8       ;
 ; resultado[1]                                                                                                              ; 8       ;
@@ -989,27 +985,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; resultado[6]                                                                                                              ; 8       ;
 ; resultado[5]                                                                                                              ; 8       ;
 ; resultado[4]                                                                                                              ; 8       ;
-; Mux32~8                                                                                                                   ; 7       ;
-; Mux27~3                                                                                                                   ; 7       ;
-; buss[4]                                                                                                                   ; 6       ;
-; Mux32~9                                                                                                                   ; 6       ;
+; buss[3]                                                                                                                   ; 7       ;
+; Mux39~0                                                                                                                   ; 7       ;
+; ShiftLeft0~0                                                                                                              ; 7       ;
+; Mux33~5                                                                                                                   ; 6       ;
+; Mux33~2                                                                                                                   ; 6       ;
 ; Mux30~0                                                                                                                   ; 6       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le4a[5]                                                                            ; 5       ;
+; LessThan0~2                                                                                                               ; 5       ;
+; ShiftLeft0~1                                                                                                              ; 5       ;
+; Mux28~3                                                                                                                   ; 5       ;
 ; seleccion[0]                                                                                                              ; 4       ;
-; LessThan0~2                                                                                                               ; 4       ;
-; ShiftLeft0~0                                                                                                              ; 4       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|add_sub_2_result_int[3]~6 ; 4       ;
 ; mostrarDisplay[0]                                                                                                         ; 3       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]                                                                            ; 3       ;
-; Mux32~15                                                                                                                  ; 3       ;
+; Mux33~10                                                                                                                  ; 3       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|cs2a[1]~0                                                                          ; 3       ;
-; Mux38~0                                                                                                                   ; 3       ;
-; Mux40~0                                                                                                                   ; 3       ;
+; Mux37~0                                                                                                                   ; 3       ;
+; Mux39~2                                                                                                                   ; 3       ;
 ; seleccion[1]                                                                                                              ; 3       ;
-; Equal0~0                                                                                                                  ; 3       ;
-; Mux26~12                                                                                                                  ; 3       ;
-; ShiftRight1~0                                                                                                             ; 3       ;
+; ShiftLeft1~0                                                                                                              ; 3       ;
+; Mux26~13                                                                                                                  ; 3       ;
 ; RotateLeft0~0                                                                                                             ; 3       ;
+; Mux31~0                                                                                                                   ; 3       ;
+; ShiftRight0~1                                                                                                             ; 3       ;
+; Mux26~4                                                                                                                   ; 3       ;
 ; RotateRight0~0                                                                                                            ; 3       ;
 ; segmentos[6]$latch                                                                                                        ; 2       ;
 ; segmentos[5]$latch                                                                                                        ; 2       ;
@@ -1023,18 +1023,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; A2[2]$latch                                                                                                               ; 2       ;
 ; A2[1]$latch                                                                                                               ; 2       ;
 ; A2[0]$latch                                                                                                               ; 2       ;
-; Mux36~3                                                                                                                   ; 2       ;
 ; Mux35~3                                                                                                                   ; 2       ;
+; Mux34~3                                                                                                                   ; 2       ;
+; Mux33~3                                                                                                                   ; 2       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[4]~2             ; 2       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[5]~0              ; 2       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~1             ; 2       ;
-; Mux27~9                                                                                                                   ; 2       ;
-; Mux28~1                                                                                                                   ; 2       ;
-; Mux26~1                                                                                                                   ; 2       ;
-; Mux29~1                                                                                                                   ; 2       ;
+; Equal0~0                                                                                                                  ; 2       ;
+; RotateLeft0~3                                                                                                             ; 2       ;
+; RotateLeft0~1                                                                                                             ; 2       ;
 ; ShiftRight0~0                                                                                                             ; 2       ;
-; Mux27~2                                                                                                                   ; 2       ;
-; Mux28~0                                                                                                                   ; 2       ;
+; RotateRight0~1                                                                                                            ; 2       ;
+; Mux28~2                                                                                                                   ; 2       ;
 ; Add2~8                                                                                                                    ; 2       ;
 ; Add1~8                                                                                                                    ; 2       ;
 ; contador[8]                                                                                                               ; 2       ;
@@ -1050,10 +1050,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; contador[16]                                                                                                              ; 2       ;
 ; contador[15]                                                                                                              ; 2       ;
 ; Add0~0                                                                                                                    ; 2       ;
-; Mux32~14                                                                                                                  ; 1       ;
-; Mux32~13                                                                                                                  ; 1       ;
-; Mux32~12                                                                                                                  ; 1       ;
-; Mux27~14                                                                                                                  ; 1       ;
+; Mux25~15                                                                                                                  ; 1       ;
+; Mux25~14                                                                                                                  ; 1       ;
+; Mux28~10                                                                                                                  ; 1       ;
+; Mux28~9                                                                                                                   ; 1       ;
+; Mux36~6                                                                                                                   ; 1       ;
+; Mux28~8                                                                                                                   ; 1       ;
+; Mux27~13                                                                                                                  ; 1       ;
+; Mux26~15                                                                                                                  ; 1       ;
+; Mux25~13                                                                                                                  ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le5a[3]                                                                            ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le5a[2]                                                                            ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le4a[4]                                                                            ; 1       ;
@@ -1068,37 +1073,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lpm_mult:Mult0|mult_14t:auto_generated|le3a[3]                                                                            ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le4a[2]                                                                            ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|le3a[4]                                                                            ; 1       ;
-; Mux36~5                                                                                                                   ; 1       ;
-; Mux36~4                                                                                                                   ; 1       ;
-; Mux36~2                                                                                                                   ; 1       ;
-; Mux36~1                                                                                                                   ; 1       ;
-; Mux36~0                                                                                                                   ; 1       ;
+; Mux35~6                                                                                                                   ; 1       ;
 ; Mux35~5                                                                                                                   ; 1       ;
 ; Mux35~4                                                                                                                   ; 1       ;
 ; Mux35~2                                                                                                                   ; 1       ;
 ; Mux35~1                                                                                                                   ; 1       ;
 ; Mux35~0                                                                                                                   ; 1       ;
-; Mux34                                                                                                                     ; 1       ;
+; Mux34~6                                                                                                                   ; 1       ;
+; Mux34~5                                                                                                                   ; 1       ;
+; Mux34~4                                                                                                                   ; 1       ;
 ; Mux34~2                                                                                                                   ; 1       ;
 ; Mux34~1                                                                                                                   ; 1       ;
 ; Mux34~0                                                                                                                   ; 1       ;
-; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|selnose[10]               ; 1       ;
-; Mux32                                                                                                                     ; 1       ;
-; Mux32~11                                                                                                                  ; 1       ;
-; Mux32~10                                                                                                                  ; 1       ;
+; Mux33~9                                                                                                                   ; 1       ;
+; Mux33~8                                                                                                                   ; 1       ;
+; Mux33~7                                                                                                                   ; 1       ;
+; Mux33~6                                                                                                                   ; 1       ;
+; Mux33~4                                                                                                                   ; 1       ;
+; Mux31~5                                                                                                                   ; 1       ;
+; Mux31~4                                                                                                                   ; 1       ;
+; Mux25~12                                                                                                                  ; 1       ;
+; Mux25~11                                                                                                                  ; 1       ;
+; Mux31~3                                                                                                                   ; 1       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[8]~5             ; 1       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[9]~4             ; 1       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[10]~3            ; 1       ;
 ; lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider|StageOut[5]~0             ; 1       ;
-; Mux40~1                                                                                                                   ; 1       ;
-; Mux39~0                                                                                                                   ; 1       ;
-; Mux38~1                                                                                                                   ; 1       ;
-; Mux37~5                                                                                                                   ; 1       ;
-; Mux37~4                                                                                                                   ; 1       ;
-; Mux37~3                                                                                                                   ; 1       ;
-; Mux37~2                                                                                                                   ; 1       ;
+; Mux31~2                                                                                                                   ; 1       ;
+; Mux31~1                                                                                                                   ; 1       ;
+; Mux39~3                                                                                                                   ; 1       ;
+; Mux38~0                                                                                                                   ; 1       ;
 ; Mux37~1                                                                                                                   ; 1       ;
-; Mux37~0                                                                                                                   ; 1       ;
+; Mux36~5                                                                                                                   ; 1       ;
+; Mux36~4                                                                                                                   ; 1       ;
+; Mux36~3                                                                                                                   ; 1       ;
+; Mux36~2                                                                                                                   ; 1       ;
+; Mux39~1                                                                                                                   ; 1       ;
 ; seleccion[1]~1                                                                                                            ; 1       ;
 ; seleccion[0]~0                                                                                                            ; 1       ;
 ; LessThan1~2                                                                                                               ; 1       ;
@@ -1125,39 +1135,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Mux0~0                                                                                                                    ; 1       ;
 ; Mux7~0                                                                                                                    ; 1       ;
 ; Mux14~0                                                                                                                   ; 1       ;
-; Mux31~0                                                                                                                   ; 1       ;
 ; Mux30~2                                                                                                                   ; 1       ;
-; Mux30~1                                                                                                                   ; 1       ;
 ; LessThan0~1                                                                                                               ; 1       ;
 ; LessThan0~0                                                                                                               ; 1       ;
-; Mux28~8                                                                                                                   ; 1       ;
+; Mux30~1                                                                                                                   ; 1       ;
 ; Mux28~7                                                                                                                   ; 1       ;
 ; Mux28~6                                                                                                                   ; 1       ;
 ; Mux28~5                                                                                                                   ; 1       ;
 ; Mux28~4                                                                                                                   ; 1       ;
-; Mux28~3                                                                                                                   ; 1       ;
-; Mux28~2                                                                                                                   ; 1       ;
-; Mux27~13                                                                                                                  ; 1       ;
 ; Mux27~12                                                                                                                  ; 1       ;
 ; Mux27~11                                                                                                                  ; 1       ;
 ; Mux27~10                                                                                                                  ; 1       ;
+; Mux27~9                                                                                                                   ; 1       ;
+; RotateLeft0~2                                                                                                             ; 1       ;
 ; Mux27~8                                                                                                                   ; 1       ;
 ; Mux27~7                                                                                                                   ; 1       ;
 ; Mux27~6                                                                                                                   ; 1       ;
 ; Mux27~5                                                                                                                   ; 1       ;
 ; Mux27~4                                                                                                                   ; 1       ;
-; Mux26~13                                                                                                                  ; 1       ;
+; Mux26~14                                                                                                                  ; 1       ;
+; Mux26~12                                                                                                                  ; 1       ;
 ; Mux26~11                                                                                                                  ; 1       ;
+; RotateRight0~2                                                                                                            ; 1       ;
 ; Mux26~10                                                                                                                  ; 1       ;
 ; Mux26~9                                                                                                                   ; 1       ;
 ; Mux26~8                                                                                                                   ; 1       ;
 ; Mux26~7                                                                                                                   ; 1       ;
 ; Mux26~6                                                                                                                   ; 1       ;
 ; Mux26~5                                                                                                                   ; 1       ;
-; Mux26~4                                                                                                                   ; 1       ;
-; Mux26~3                                                                                                                   ; 1       ;
-; Mux26~2                                                                                                                   ; 1       ;
-; Mux26~0                                                                                                                   ; 1       ;
 ; Mux29~0                                                                                                                   ; 1       ;
 ; Mux25~10                                                                                                                  ; 1       ;
 ; Mux25~9                                                                                                                   ; 1       ;
@@ -1168,8 +1173,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Mux25~4                                                                                                                   ; 1       ;
 ; Mux25~3                                                                                                                   ; 1       ;
 ; Mux25~2                                                                                                                   ; 1       ;
-; Mux25~1                                                                                                                   ; 1       ;
-; Mux25~0                                                                                                                   ; 1       ;
 ; contador[16]~49                                                                                                           ; 1       ;
 ; contador[15]~48                                                                                                           ; 1       ;
 ; contador[15]~47                                                                                                           ; 1       ;
@@ -1229,6 +1232,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_3~10                                                                            ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_1~7                                                                             ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_1~6                                                                             ; 1       ;
+; Add0~8                                                                                                                    ; 1       ;
+; Add0~7                                                                                                                    ; 1       ;
+; Add0~6                                                                                                                    ; 1       ;
+; Add0~5                                                                                                                    ; 1       ;
+; Add0~4                                                                                                                    ; 1       ;
+; Add0~3                                                                                                                    ; 1       ;
+; Add0~2                                                                                                                    ; 1       ;
 ; Add2~7                                                                                                                    ; 1       ;
 ; Add2~6                                                                                                                    ; 1       ;
 ; Add2~5                                                                                                                    ; 1       ;
@@ -1261,13 +1271,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_1~2                                                                             ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_1~1                                                                             ; 1       ;
 ; lpm_mult:Mult0|mult_14t:auto_generated|op_1~0                                                                             ; 1       ;
-; Add0~8                                                                                                                    ; 1       ;
-; Add0~7                                                                                                                    ; 1       ;
-; Add0~6                                                                                                                    ; 1       ;
-; Add0~5                                                                                                                    ; 1       ;
-; Add0~4                                                                                                                    ; 1       ;
-; Add0~3                                                                                                                    ; 1       ;
-; Add0~2                                                                                                                    ; 1       ;
 ; Add0~1                                                                                                                    ; 1       ;
 +---------------------------------------------------------------------------------------------------------------------------+---------+
 
@@ -1277,25 +1280,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 299 / 15,666 ( 2 % )  ;
-; C16 interconnects           ; 4 / 812 ( < 1 % )     ;
-; C4 interconnects            ; 152 / 11,424 ( 1 % )  ;
-; Direct links                ; 58 / 15,666 ( < 1 % ) ;
-; Global clocks               ; 4 / 8 ( 50 % )        ;
-; Local interconnects         ; 133 / 4,608 ( 3 % )   ;
-; R24 interconnects           ; 13 / 652 ( 2 % )      ;
-; R4 interconnects            ; 140 / 13,328 ( 1 % )  ;
+; Block interconnects         ; 326 / 15,666 ( 2 % )  ;
+; C16 interconnects           ; 2 / 812 ( < 1 % )     ;
+; C4 interconnects            ; 182 / 11,424 ( 2 % )  ;
+; Direct links                ; 65 / 15,666 ( < 1 % ) ;
+; Global clocks               ; 3 / 8 ( 38 % )        ;
+; Local interconnects         ; 122 / 4,608 ( 3 % )   ;
+; R24 interconnects           ; 12 / 652 ( 2 % )      ;
+; R4 interconnects            ; 174 / 13,328 ( 1 % )  ;
 +-----------------------------+-----------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.83) ; Number of LABs  (Total = 18) ;
+; Number of Logic Elements  (Average = 13.17) ; Number of LABs  (Total = 18) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
+; 1                                           ; 2                            ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 1                            ;
+; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
@@ -1304,11 +1307,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                           ; 0                            ;
 ; 10                                          ; 1                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 1                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 4                            ;
-; 16                                          ; 6                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 3                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 10                           ;
 +---------------------------------------------+------------------------------+
 
 
@@ -1325,25 +1328,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.67) ; Number of LABs  (Total = 18) ;
+; Number of Signals Sourced  (Average = 14.00) ; Number of LABs  (Total = 18) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
+; 1                                            ; 2                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 1                            ;
+; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 2                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 6                            ;
-; 16                                           ; 5                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 9                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
@@ -1358,62 +1361,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.22) ; Number of LABs  (Total = 18) ;
+; Number of Signals Sourced Out  (Average = 6.50) ; Number of LABs  (Total = 18) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 1                            ;
-; 2                                               ; 3                            ;
-; 3                                               ; 3                            ;
-; 4                                               ; 0                            ;
+; 1                                               ; 2                            ;
+; 2                                               ; 2                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 1                            ;
 ; 5                                               ; 1                            ;
 ; 6                                               ; 1                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 4                            ;
+; 7                                               ; 2                            ;
+; 8                                               ; 0                            ;
 ; 9                                               ; 1                            ;
-; 10                                              ; 0                            ;
-; 11                                              ; 2                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 0                            ;
-; 15                                              ; 1                            ;
+; 10                                              ; 2                            ;
+; 11                                              ; 1                            ;
+; 12                                              ; 3                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 12.33) ; Number of LABs  (Total = 18) ;
+; Number of Distinct Inputs  (Average = 12.83) ; Number of LABs  (Total = 18) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 1                            ;
+; 4                                            ; 2                            ;
 ; 5                                            ; 1                            ;
-; 6                                            ; 1                            ;
+; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 1                            ;
 ; 9                                            ; 1                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
+; 10                                           ; 2                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 1                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 2                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 0                            ;
 ; 18                                           ; 1                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
 ; 21                                           ; 0                            ;
 ; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 1                            ;
+; 24                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1451,7 +1446,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; buss[1]              ; 62.4              ;
+; I/O             ; buss[0]              ; 86.0              ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -1462,19 +1457,19 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------+-------------------+
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; buss[1]         ; resultado[0]         ; 3.108             ;
-; buss[2]         ; resultado[0]         ; 2.384             ;
-; buss[0]         ; resultado[0]         ; 2.384             ;
-; B[3]            ; resultado[0]         ; 2.319             ;
-; A[3]            ; resultado[0]         ; 2.319             ;
-; B[2]            ; resultado[0]         ; 2.319             ;
-; A[2]            ; resultado[0]         ; 2.319             ;
-; B[1]            ; resultado[0]         ; 2.319             ;
-; A[1]            ; resultado[0]         ; 2.319             ;
-; B[0]            ; resultado[0]         ; 2.319             ;
-; A[0]            ; resultado[0]         ; 2.319             ;
-; buss[3]         ; A2[3]$latch          ; 1.586             ;
-; buss[4]         ; resultado[4]         ; 0.921             ;
+; buss[0]         ; led$latch            ; 3.904             ;
+; buss[1]         ; A2[2]$latch          ; 3.175             ;
+; buss[3]         ; led$latch            ; 2.603             ;
+; buss[4]         ; led$latch            ; 2.603             ;
+; B[0]            ; A2[0]$latch          ; 2.339             ;
+; A[0]            ; A2[0]$latch          ; 2.339             ;
+; buss[2]         ; resultado[6]         ; 2.321             ;
+; A[3]            ; A2[0]$latch          ; 2.290             ;
+; B[3]            ; A2[0]$latch          ; 2.290             ;
+; B[2]            ; A2[0]$latch          ; 2.290             ;
+; A[1]            ; A2[0]$latch          ; 2.290             ;
+; B[1]            ; A2[0]$latch          ; 2.290             ;
+; A[2]            ; A2[0]$latch          ; 2.290             ;
 +-----------------+----------------------+-------------------+
 Note: This table only shows the top 13 path(s) that have the largest delay added for hold.
 
@@ -1504,16 +1499,14 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node clk (placed in PIN 17 (CLK0, LVDSCLK0p, Input))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node Mux33~0 
+Info (176353): Automatically promoted node Mux29~1 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node Mux21~0 
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node Mux29~2 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1522,10 +1515,10 @@ Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 1.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.05 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 14 output pins without output pin load capacitance assignment
     Info (306007): Pin "A2[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1545,14 +1538,14 @@ Warning (306006): Found 14 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/output_files/ALU.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Fri Jun 18 13:36:45 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Fri Jun 18 14:59:36 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+

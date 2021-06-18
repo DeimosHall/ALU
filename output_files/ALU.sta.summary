@@ -3,42 +3,42 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'mostrarDisplay[0]'
-Slack : -5.888
-TNS   : -39.663
+Slack : -6.570
+TNS   : -43.374
 
 Type  : Slow Model Setup 'clk'
-Slack : -3.569
-TNS   : -59.820
+Slack : -3.627
+TNS   : -61.751
 
 Type  : Slow Model Setup 'seleccion[1]'
-Slack : -3.340
-TNS   : -6.645
+Slack : -3.298
+TNS   : -6.519
 
-Type  : Slow Model Setup 'buss[1]'
-Slack : -2.161
-TNS   : -18.113
+Type  : Slow Model Setup 'buss[0]'
+Slack : -2.925
+TNS   : -26.869
 
 Type  : Slow Model Hold 'clk'
-Slack : -2.555
-TNS   : -2.555
+Slack : -2.522
+TNS   : -2.522
 
 Type  : Slow Model Hold 'mostrarDisplay[0]'
-Slack : -1.115
-TNS   : -6.809
+Slack : -1.409
+TNS   : -6.938
 
-Type  : Slow Model Hold 'buss[1]'
-Slack : -0.983
-TNS   : -3.761
+Type  : Slow Model Hold 'buss[0]'
+Slack : 0.946
+TNS   : 0.000
 
 Type  : Slow Model Hold 'seleccion[1]'
-Slack : 2.872
+Slack : 2.845
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.941
 TNS   : -30.137
 
-Type  : Slow Model Minimum Pulse Width 'buss[1]'
+Type  : Slow Model Minimum Pulse Width 'buss[0]'
 Slack : -1.777
 TNS   : -1.777
 
@@ -51,42 +51,42 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'mostrarDisplay[0]'
-Slack : -1.613
-TNS   : -10.931
+Slack : -1.896
+TNS   : -12.637
 
 Type  : Fast Model Setup 'seleccion[1]'
-Slack : -0.944
-TNS   : -1.876
+Slack : -0.908
+TNS   : -1.798
 
 Type  : Fast Model Setup 'clk'
-Slack : -0.488
-TNS   : -6.807
+Slack : -0.501
+TNS   : -7.517
 
-Type  : Fast Model Setup 'buss[1]'
-Slack : -0.098
-TNS   : -0.217
+Type  : Fast Model Setup 'buss[0]'
+Slack : -0.125
+TNS   : -0.210
 
 Type  : Fast Model Hold 'clk'
-Slack : -1.360
-TNS   : -1.360
-
-Type  : Fast Model Hold 'buss[1]'
-Slack : -0.722
-TNS   : -3.341
+Slack : -1.332
+TNS   : -1.332
 
 Type  : Fast Model Hold 'mostrarDisplay[0]'
-Slack : -0.359
-TNS   : -2.238
+Slack : -0.337
+TNS   : -1.642
+
+Type  : Fast Model Hold 'buss[0]'
+Slack : -0.097
+TNS   : -0.375
 
 Type  : Fast Model Hold 'seleccion[1]'
-Slack : 1.515
+Slack : 1.489
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
 TNS   : -20.380
 
-Type  : Fast Model Minimum Pulse Width 'buss[1]'
+Type  : Fast Model Minimum Pulse Width 'buss[0]'
 Slack : -1.222
 TNS   : -1.222
 

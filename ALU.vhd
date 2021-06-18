@@ -8,7 +8,7 @@ entity ALU is
 	port (clk: in std_logic;
 			A, B: in std_logic_vector(3 downto 0);
 			buss: in std_logic_vector(4 downto 0);
-			A2: out std_logic_vector(3 downto 0);
+			A2: out std_logic_vector(3 downto 0) := "0000";
 			led: out std_logic := '0';
 			displays: out std_logic_vector(1 downto 0);
 			segmentos: out std_logic_vector(6 downto 0));
@@ -30,7 +30,9 @@ begin
 			when "00000" => -- Suma
 				resultado <= "000" & ('0' & A) + ('0' & B);
 				led <= '0';
+				A2 <= "0000";
 			when "00001" => -- Resta
+				A2 <= "0000";
 				if(A < B) then
 					resultado <= "000" & ('0' & B) - ('0' & A);
 					led <= '1';
@@ -41,13 +43,17 @@ begin
 			when "00010" => -- Multiplicacion
 				resultado <= std_logic_vector(unsigned(A) * unsigned(B));
 				led <= '0';
+				A2 <= "0000";
 			when "00011" => -- Division
 				resultado <= "0000" & std_logic_vector(unsigned(A) / unsigned(B));
 				led <= '0';
+				A2 <= "0000";
 			when "00100" => -- Incremento
 				resultado <= "000" & (('0' & A) + 1);
 				led <= '0';
+				A2 <= "0000";
 			when "00101" => -- Decremento
+				A2 <= "0000";
 				if(A = 0) then
 					resultado <= "00000001";
 					led <= '1';
@@ -58,42 +64,55 @@ begin
 			when "00110" =>
 				A2 <= "000" & (A(0) and B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "00111" =>
 				A2 <= "000" & (A(0) or B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01000" =>
 				A2 <= "000" & (A(0) nor B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01001" =>
 				A2 <= "000" & (A(0) nand B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01010" =>
 				A2 <= "000" & (A(0) xor B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01011" =>
 				A2 <= "000" & (A(0) xnor B(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01100" =>
 				A2 <= "000" & (not A(0));
 				led <= '0';
+				resultado <= "00000000";
 			when "01101" =>
 				A2 <= std_logic_vector(unsigned(A) SLL to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when "01110" =>
 				A2 <= std_logic_vector(unsigned(A) SRL to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when "01111" =>
 				A2 <= to_stdlogicvector(to_bitvector(A) SLA to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when "10000" =>
 				A2 <= to_stdlogicvector(to_bitvector(A) SRA to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when "10001" =>
 				A2 <= std_logic_vector(unsigned(A) ROL to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when "10010" =>
 				A2 <= std_logic_vector(unsigned(A) ROR to_integer(unsigned(B)));
 				led <= '0';
+				resultado <= "00000000";
 			when others => 
 		end case;
 	end process;
