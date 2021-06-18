@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Jun 17 13:36:08 2021
+Fri Jun 18 13:36:38 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,8 +16,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 12. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
  13. lpm_mult Parameter Settings by Entity Instance
  14. Elapsed Time Per Partition
  15. Analysis & Synthesis Messages
@@ -46,16 +46,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 17 13:36:08 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 18 13:36:38 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 177                                             ;
-;     Total combinational functions  ; 177                                             ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 39                                              ;
+; Total logic elements               ; 230                                             ;
+;     Total combinational functions  ; 230                                             ;
+;     Dedicated logic registers      ; 19                                              ;
+; Total registers                    ; 19                                              ;
+; Total pins                         ; 28                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -165,21 +165,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
 ; ALU.vhd                          ; yes             ; User VHDL File               ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/ALU.vhd                    ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                              ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                             ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                ;         ;
-; db/mult_14t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/mult_14t.tdf            ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                              ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                             ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                         ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                              ;         ;
 ; db/lpm_divide_tcm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/lpm_divide_tcm.tdf      ;         ;
 ; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/sign_div_unsign_7kh.tdf ;         ;
 ; db/alt_u_div_gve.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/alt_u_div_gve.tdf       ;         ;
 ; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/add_sub_lkc.tdf         ;         ;
 ; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/add_sub_mkc.tdf         ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                             ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                ;         ;
+; db/mult_14t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/Software Development/VHDL/Diseño Digital Con VHDL/Unidad IV/ALU/db/mult_14t.tdf            ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
@@ -188,28 +188,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 177   ;
+; Estimated Total logic elements              ; 230   ;
 ;                                             ;       ;
-; Total combinational functions               ; 177   ;
+; Total combinational functions               ; 230   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 94    ;
-;     -- 3 input functions                    ; 62    ;
-;     -- <=2 input functions                  ; 21    ;
+;     -- 4 input functions                    ; 110   ;
+;     -- 3 input functions                    ; 84    ;
+;     -- <=2 input functions                  ; 36    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 146   ;
-;     -- arithmetic mode                      ; 31    ;
+;     -- normal mode                          ; 183   ;
+;     -- arithmetic mode                      ; 47    ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
+; Total registers                             ; 19    ;
+;     -- Dedicated logic registers            ; 19    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 39    ;
+; I/O pins                                    ; 28    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; B[1]  ;
-; Maximum fan-out                             ; 38    ;
-; Total fan-out                               ; 606   ;
-; Average fan-out                             ; 2.81  ;
+; Maximum fan-out                             ; 39    ;
+; Total fan-out                               ; 821   ;
+; Average fan-out                             ; 2.96  ;
 +---------------------------------------------+-------+
 
 
@@ -218,11 +218,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                   ; 177 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |ALU                                                                                                 ; work         ;
-;    |lpm_divide:Div0|                   ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
-;       |lpm_divide_tcm:auto_generated|  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
-;             |alt_u_div_gve:divider|    ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
+; |ALU                                   ; 230 (182)         ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |ALU                                                                                                 ; work         ;
+;    |lpm_divide:Div0|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0                                                                                 ; work         ;
+;       |lpm_divide_tcm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
+;             |alt_u_div_gve:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_gve:divider ; work         ;
 ;    |lpm_mult:Mult0|                    ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mult:Mult0                                                                                  ; work         ;
 ;       |mult_14t:auto_generated|        ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mult:Mult0|mult_14t:auto_generated                                                          ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
@@ -234,20 +234,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; A2[0]$latch                                         ; Mux4                ; yes                    ;
-; A2[1]$latch                                         ; Mux4                ; yes                    ;
-; A2[2]$latch                                         ; Mux4                ; yes                    ;
-; A2[3]$latch                                         ; Mux4                ; yes                    ;
-; led$latch                                           ; Mux6                ; yes                    ;
-; resultado[0]$latch                                  ; Mux15               ; yes                    ;
-; resultado[1]$latch                                  ; Mux15               ; yes                    ;
-; resultado[2]$latch                                  ; Mux15               ; yes                    ;
-; resultado[3]$latch                                  ; Mux15               ; yes                    ;
-; resultado[4]$latch                                  ; Mux15               ; yes                    ;
-; resultado[5]$latch                                  ; Mux15               ; yes                    ;
-; resultado[6]$latch                                  ; Mux15               ; yes                    ;
-; resultado[7]$latch                                  ; Mux15               ; yes                    ;
-; Number of user-specified and inferred latches = 13  ;                     ;                        ;
+; A2[0]$latch                                         ; Mux29               ; yes                    ;
+; A2[1]$latch                                         ; Mux29               ; yes                    ;
+; A2[2]$latch                                         ; Mux29               ; yes                    ;
+; A2[3]$latch                                         ; Mux29               ; yes                    ;
+; led$latch                                           ; Mux31               ; yes                    ;
+; mostrarDisplay[0]                                   ; seleccion[1]        ; yes                    ;
+; mostrarDisplay[1]                                   ; seleccion[1]        ; yes                    ;
+; segmentos[0]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[1]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[2]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[3]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[4]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[5]$latch                                  ; Mux21               ; yes                    ;
+; segmentos[6]$latch                                  ; Mux21               ; yes                    ;
+; resultado[0]                                        ; Mux33               ; yes                    ;
+; resultado[1]                                        ; Mux33               ; yes                    ;
+; resultado[2]                                        ; Mux33               ; yes                    ;
+; resultado[3]                                        ; Mux33               ; yes                    ;
+; resultado[4]                                        ; Mux33               ; yes                    ;
+; resultado[5]                                        ; Mux33               ; yes                    ;
+; resultado[6]                                        ; Mux33               ; yes                    ;
+; resultado[7]                                        ; Mux33               ; yes                    ;
+; Number of user-specified and inferred latches = 22  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -257,8 +266,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 19    ;
+; Number of registers using Synchronous Clear  ; 17    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -272,9 +281,32 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 15:1               ; 3 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |ALU|Mux8                  ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ALU|Mux14                 ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |ALU|Mux32                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|Mux40                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 4              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_tcm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------+
@@ -309,29 +341,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
 +------------------------------------------------+------------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_tcm ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -370,59 +379,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jun 17 13:36:03 2021
+    Info: Processing started: Fri Jun 18 13:36:33 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
     Info (12022): Found design unit 1: ALU-behavioral
     Info (12023): Found entity 1: ALU
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at ALU.vhd(15): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at ALU.vhd(49): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(49): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(53): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(53): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(57): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(57): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ALU.vhd(61): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at ALU.vhd(23): inferring latch(es) for signal or variable "resultado", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at ALU.vhd(23): inferring latch(es) for signal or variable "led", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at ALU.vhd(23): inferring latch(es) for signal or variable "A2", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "A2[0]" at ALU.vhd(23)
-Info (10041): Inferred latch for "A2[1]" at ALU.vhd(23)
-Info (10041): Inferred latch for "A2[2]" at ALU.vhd(23)
-Info (10041): Inferred latch for "A2[3]" at ALU.vhd(23)
-Info (10041): Inferred latch for "led" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[0]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[1]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[2]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[3]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[4]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[5]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[6]" at ALU.vhd(23)
-Info (10041): Inferred latch for "resultado[7]" at ALU.vhd(23)
+Warning (10631): VHDL Process Statement warning at ALU.vhd(28): inferring latch(es) for signal or variable "resultado", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(28): inferring latch(es) for signal or variable "led", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(28): inferring latch(es) for signal or variable "A2", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at ALU.vhd(118): signal "mostrarDisplay" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(119): signal "num1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(120): signal "num2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at ALU.vhd(112): inferring latch(es) for signal or variable "mostrarDisplay", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(112): inferring latch(es) for signal or variable "segmentos", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "segmentos[0]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[1]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[2]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[3]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[4]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[5]" at ALU.vhd(112)
+Info (10041): Inferred latch for "segmentos[6]" at ALU.vhd(112)
+Info (10041): Inferred latch for "mostrarDisplay[0]" at ALU.vhd(112)
+Info (10041): Inferred latch for "mostrarDisplay[1]" at ALU.vhd(112)
+Info (10041): Inferred latch for "A2[0]" at ALU.vhd(28)
+Info (10041): Inferred latch for "A2[1]" at ALU.vhd(28)
+Info (10041): Inferred latch for "A2[2]" at ALU.vhd(28)
+Info (10041): Inferred latch for "A2[3]" at ALU.vhd(28)
+Info (10041): Inferred latch for "led" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[0]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[1]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[2]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[3]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[4]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[5]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[6]" at ALU.vhd(28)
+Info (10041): Inferred latch for "resultado[7]" at ALU.vhd(28)
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0"
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "4"
-    Info (12134): Parameter "LPM_WIDTHB" = "4"
-    Info (12134): Parameter "LPM_WIDTHP" = "8"
-    Info (12134): Parameter "LPM_WIDTHR" = "8"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_14t.tdf
-    Info (12023): Found entity 1: mult_14t
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
 Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0"
 Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "4"
@@ -439,6 +435,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_lkc
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
     Info (12023): Found entity 1: add_sub_mkc
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "4"
+    Info (12134): Parameter "LPM_WIDTHB" = "4"
+    Info (12134): Parameter "LPM_WIDTHP" = "8"
+    Info (12134): Parameter "LPM_WIDTHR" = "8"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_14t.tdf
+    Info (12023): Found entity 1: mult_14t
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
         Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_14t:auto_generated|le5a[4]"
@@ -446,7 +455,7 @@ Info (13014): Ignored 48 buffer(s)
     Info (13016): Ignored 4 CARRY_SUM buffer(s)
     Info (13019): Ignored 44 SOFT buffer(s)
 Warning (13012): Latch A2[0]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
 Warning (13012): Latch A2[1]$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
 Warning (13012): Latch A2[2]$latch has unsafe behavior
@@ -454,47 +463,48 @@ Warning (13012): Latch A2[2]$latch has unsafe behavior
 Warning (13012): Latch A2[3]$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
 Warning (13012): Latch led$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[0]
-Warning (13012): Latch resultado[0]$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
-Warning (13012): Latch resultado[1]$latch has unsafe behavior
+Warning (13012): Latch segmentos[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[4]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[5]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch segmentos[6]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mostrarDisplay[1]
+Warning (13012): Latch resultado[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+Warning (13012): Latch resultado[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+Warning (13012): Latch resultado[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+Warning (13012): Latch resultado[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[2]
+Warning (13012): Latch resultado[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
-Warning (13012): Latch resultado[2]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
-Warning (13012): Latch resultado[3]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
-Warning (13012): Latch resultado[4]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[3]
-Warning (13012): Latch resultado[5]$latch has unsafe behavior
+Warning (13012): Latch resultado[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
-Warning (13012): Latch resultado[6]$latch has unsafe behavior
+Warning (13012): Latch resultado[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
-Warning (13012): Latch resultado[7]$latch has unsafe behavior
+Warning (13012): Latch resultado[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal buss[1]
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND
-    Warning (13410): Pin "display[1]" is stuck at GND
-    Warning (13410): Pin "display[2]" is stuck at GND
-    Warning (13410): Pin "display[3]" is stuck at GND
-    Warning (13410): Pin "display[4]" is stuck at GND
-    Warning (13410): Pin "display[5]" is stuck at GND
-    Warning (13410): Pin "display[6]" is stuck at GND
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_mult:Mult0|mult_14t:auto_generated|le3a[5]"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "F[0]"
-    Warning (15610): No output dependent on input pin "F[1]"
-    Warning (15610): No output dependent on input pin "F[2]"
-    Warning (15610): No output dependent on input pin "F[3]"
-Info (21057): Implemented 216 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 177 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4646 megabytes
-    Info: Processing ended: Thu Jun 17 13:36:08 2021
+Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 230 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Fri Jun 18 13:36:38 2021
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
